@@ -26,7 +26,8 @@ async def get_admins(message: types.Message, bot: Bot):
     ]
     bot.my_admins_list = admins_list
     if message.from_user.id in admins_list:
-        await message.delete()
+        await message.answer('Есть')
+        # await message.delete()
     #print(admins_list)
 
 
